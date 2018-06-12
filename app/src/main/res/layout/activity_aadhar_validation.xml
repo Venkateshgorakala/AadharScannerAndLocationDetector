@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="notifications.test.com.aadhardemo.AadharValidation.AadharValidationActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_aadhaar_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Aadhar No" />
+
+
+        <Button
+            android:id="@+id/btn_scan_aadhar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ScanAadhar"
+            android:text="Scan Aadhaar"
+            android:textAllCaps="false" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/et_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gender" />
+
+
+        <EditText
+            android:id="@+id/et_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Birth" />
+
+        <EditText
+            android:maxLines="4"
+            android:id="@+id/et_address_line_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address" />
+        <EditText
+            android:maxLines="4"
+            android:id="@+id/et_address_line_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Village" />
+        <EditText
+            android:maxLines="4"
+            android:id="@+id/et_address_line_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="State" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_location_line_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Location" />
+
+
+        <Button
+            android:id="@+id/btn_fetch_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Fetch_Location"
+            android:text="Location"
+            android:textAllCaps="false" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_loc_add_line_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Address" />
+        <EditText
+            android:id="@+id/et_loc_lat_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Lat &amp; Lng" />
+    </LinearLayout>
+
+</LinearLayout>
